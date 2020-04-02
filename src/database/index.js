@@ -8,6 +8,8 @@ mongoose.connect(
     useNewUrlParser: true 
 });
 
+mongoose.set('useFindAndModify', false);
+
 mongoose.Promise = global.Promise;
 
 module.exports = mongoose;
